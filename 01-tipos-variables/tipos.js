@@ -6,18 +6,24 @@ var casa = undefined;  //Undefined es falso
 var carro = null;
 var arreglo = []
 
-if (nombre !== edad) {
-
-    console.log("V")
-} else {
-    console.log("F")
+var usuario = {
+    "nombre":"Mayra",
+    apellido:"Rosero", //No es necesario utilizar commillas dobles
+    cedula: '1003308960',//Es una buena practica utilizar solo comillas simples
+    imprimirEnConsola: function () {
+        console.log(this.nombre + ' ' + this.apellido + ' ' + this.cedula)
+    }
 }
 
-console.log(fecha)
+console.log(usuario.imprimirEnConsola());
 
-console.log(casa?"Verdadero": "Falso")
+function sumarDosNumero(numeroUno,numeroDos) {
+    return numeroUno + numeroDos;
+}
+console.log(sumarDosNumero(3,5))
 
-console.log(-1?"Verdadero": "Falso")
-console.log(0?"Verdadero": "Falso")
-console.log(1?"Verdadero": "Falso")
-console.log(arreglo?"Verdadero": "Falso")
+var sumarDosNumerosVersionDos = function (numeroUno, numeroDos) {
+    return numeroUno + numeroDos;
+}
+console.log(sumarDosNumerosVersionDos(2,5))
+
