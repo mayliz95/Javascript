@@ -1,11 +1,14 @@
-var nombre = "22"
+var nombre = "May"
 var edad = 22
 var fecha = new Date();
 var casado = false; // true
 var casa = undefined;  //Undefined es falso
 var carro = null;
-var arregloNumeros = []
+var arregloNumeros = [1,2,3,4]
+var arreglo = [nombre,edad,fecha, casado, sumarDosNumero(2,3), sumarDosNumero]
 
+
+console.log(arreglo)
 
 console.log(sumarDosNumero(3,5))
 
