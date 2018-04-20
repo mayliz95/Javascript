@@ -14,5 +14,24 @@ var Usuario = /** @class */ (function () {
     return Usuario;
 }());
 var usuario = new Usuario('Mayra', 22, '1003308960');
+function noHaceNada() {
+}
+console.log(noHaceNada());
+console.log(noHaceNada);
 usuario.imprimirEnConsola();
-//cedula = '1003308961'; //error de read only
+var usuarioOtro = {
+    mNombre: 'May',
+    mEdad: 22,
+    mCedula: '1003308960'
+};
+console.log(usuario);
+console.log(usuarioOtro);
+var usuarioTres;
+var usuarioCuatro = /** @class */ (function () {
+    function usuarioCuatro(mNombre, mEdad, mCedula) {
+        this.mNombre = mNombre;
+        this.mEdad = mEdad;
+        this.mCedula = mCedula;
+    }
+    return usuarioCuatro;
+}());
